@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Police Department</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<style>
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Times New Roman, sans-serif;
+    background-color: #F0E68C;
+}
+
+header {
+    background-color: #FFD700;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+#logo {
+    max-width: 500px; /* Adjust the width as needed */
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-family:Solid Edge Stencil;
+    
+}
+
+main {
+    flex: 1;
+    padding: 2em;
+    width: 80%;
+    margin: 2em auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    margin-top: 0;
+}
+h1 {
+    font-family:Times New Roman, sans-serif;
+    color:#800000;
+}  
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+    color: #fff;
+}
+.highlighted-section{
+background-color:#f0f8ff;
+padding:20px;
+border-radius:5px;
+}
+button.view-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button.view-button:hover {
+    background-color: #555;
+}
+</style>
+    <header>
+        <img src="https://static.wikia.nocookie.net/logopedia/images/e/ef/Karnataka-state-police.png/revision/latest?cb=20200330054821" alt="Police Logo" id="logo">
+        <h1>KARNATAKA STATE POLICE</h1>
+<div class="highlighted-section">        
+<nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#complaint">Complaint Box</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#you-need-to-know">Citizen Must Know</a></li>
+               <li><a href="# information">Information</a></li>
+            </ul>
+        </nav>
+</div>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to the Karnataka Police Department</h2>
+            <p>We are committed to ensuring the safety and security of our community.</p>
+            <p>The website is made for citizens of Karnataka, with the main aim of facilitating fast complaint registration through digital support and analyzing crime in Karnataka cities.</p>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Crime Reporting</li>
+                <li>Patrol Services</li>
+                <li>Community Outreach</li>
+                <li>Emergency Response</li>
+            </ul>
+        </section>
+
+        <section id="you-need-to-know">
+            <h2>Citizen Must Know</h2>
+            <ul>
+                <li><button class="view-button" onclick="window.location.href='comp.html';">Complaint Registration in Detail</button></li>
+                <li><button class="view-button" onclick="window.location.href='vs.html';">Vision Statement of Department</button></li>
+                <li><button class="view-button" onclick="window.location.href='women.html';">Women and Child Safety</button></li>
+ 
+            </ul>
+        </section>
+
+        <section id="complaint">
+            <h2>Fast Complaint Box</h2>
+            <form id="complaintForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="complaint">Complaint:</label>
+                <textarea id="complaint" name="complaint" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <p id="formMessage"></p>
+        </section>
+<section id= information>
+<h2> Information</h2>
+<ul>
+<li><button class="view-button" onclick="window.location.href='info.html';">Police-Station Information</button></li>
+<li><button class="view-button" onclick="window.location.href='ipc.html';">IPC-Section</button></li>
+<li><button class="view-button" onclick="window.location.href='certi.html';">other information</button></li>
+</ul>
+</section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Phone: 123-456-7890</p>
+            <p>Email: contact@policedepartment.com</p>
+            <p>Address: Karnataka Police Headquarter Office, Sampangi Rama Nagar, Bengaluru, Karnataka, India</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; Karnataka Police Department. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
